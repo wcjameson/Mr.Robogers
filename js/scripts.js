@@ -1,6 +1,7 @@
-function replaceNum(num) {
-  const numArray = num.split(" ")
-};
+function replaceNum(number) {
+let array = [number]
+console.log(array);
+}
 
 
 
