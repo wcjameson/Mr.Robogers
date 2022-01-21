@@ -1,6 +1,6 @@
 function replaceNum(number) {
-let array = [number]
-console.log(array);
+let array = number
+let newArray = [];
 }
 
 
