@@ -28,10 +28,6 @@ function replacer(range) {
 
   };
 
-  //const rangeOfNumbers = rangeMaker(userInput)
-  //const output = replacer(rangeOfNumbers);
-  //console.log(output)
-
 
 $(document).ready(function(){
   $("form#number-input").submit(function(event){
