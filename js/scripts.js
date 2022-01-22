@@ -1,4 +1,4 @@
-//userInput = 5
+userInput = 20;
 wordArray = ["beep", "boop", "Won't you be my neighbor?"]
 
 function rangeMaker(number) {
@@ -10,28 +10,28 @@ function rangeMaker(number) {
 }
 
 function replacer(range) {
-  let ans = [];
-  let i = 0;
-    for (let i = 0; i <= num; i++) {
-      if (number.toString().includes("1")) {
-        range[i] = wordArray[0]
-        console.log("Condition1")
-      } else if (number.toString().includes("2")) {
-        range[i] = wordArray[1]
-        console.log("Condition2")
-      } else if (number.toString().includes("3")) {
-        range[i] = wordArray[2]
-        console.log("Condition3")
+  let output = [];
+    for (let i = 0; i < range.length; i++) {
+      console.log(range[i])
+      if (i.toString().split('').includes("3")) {
+        output.push(wordArray[2])
+      } else if (i.toString().split('').includes("2")) {
+        output.push(wordArray[1])
+      } else if (i.toString().split('').includes("1")) {
+        output.push(wordArray[0])
       } else {
-        ans.push(range[i])
+        output.push(i.toString())
       }
-       };
-       console.log("Hey!")
+    };
 
-      return ans;
+      return output;
 
   };
+
+  const rangeOfNumbers = rangeMaker(userInput)
+  const output = replacer(rangeOfNumbers);
+  console.log(output)
+
+
+
   
-  //const range = rangeMaker(userInput)
-  //const output = replacer(range);
-  //console.log(output)
