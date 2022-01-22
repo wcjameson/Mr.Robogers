@@ -1,4 +1,4 @@
-Describe: range()
+Describe: rangeMaker()
 
 Test: "It should return an array with a 0 if the number 0 is inputted"
 Code: range(0)

@@ -1,4 +1,4 @@
-userInput = 20;
+
 wordArray = ["beep", "boop", "Won't you be my neighbor?"]
 
 function rangeMaker(number) {
@@ -28,10 +28,18 @@ function replacer(range) {
 
   };
 
-  const rangeOfNumbers = rangeMaker(userInput)
-  const output = replacer(rangeOfNumbers);
-  console.log(output)
+  //const rangeOfNumbers = rangeMaker(userInput)
+  //const output = replacer(rangeOfNumbers);
+  //console.log(output)
 
 
-
-  
+$(document).ready(function(){
+  $("form#number-input").submit(function(event){
+    event.preventDefault();
+    const number = $("#number").val();
+    const rangeOfNumbers = rangeMaker(number)
+    const output = replacer(rangeOfNumbers);
+    
+    $("#answer").text(output);
+  });
+});
