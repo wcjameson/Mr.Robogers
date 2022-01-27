@@ -1,5 +1,5 @@
 
-wordArray = ["beep", "boop", "Won't you be my neighbor?"]
+const wordArray = ["beep", "boop", "Won't you be my neighbor?"]
 
 function rangeMaker(number) {
     var range = [];
